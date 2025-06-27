@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์เช่ารหัสเกม</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light background color */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e0e0e0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white shadow-lg py-4 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold tracking-tight mb-4 md:mb-0">GameCodeRentals</h1>
+            <nav class="w-full md:w-auto">
+                <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 items-center text-center">
+                    <li><a href="#available-games" class="block py-2 text-lg hover:text-blue-200 transition-colors duration-300 font-medium">เกมที่มี</a></li>
+                    <li><a href="#how-it-works" class="block py-2 text-lg hover:text-blue-200 transition-colors duration-300 font-medium">วิธีการทำงาน</a></li>
+                    <li><a href="#contact" class="block py-2 text-lg hover:text-blue-200 transition-colors duration-300 font-medium">ติดต่อเรา</a></li>
+                    <li><a href="#login" class="block w-full md:w-auto bg-white text-blue-600 px-6 py-2 rounded-full shadow hover:bg-blue-100 transition-all duration-300 font-medium text-lg mt-2 md:mt-0">เข้าสู่ระบบ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-16 md:py-20 px-4 shadow-md rounded-b-xl mb-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 md:mb-6 leading-tight">เช่ารหัสเกมที่คุณชื่นชอบวันนี้!</h2>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 md:mb-10 max-w-2xl mx-auto">เข้าถึงเกมล่าสุดและเกมคลาสสิกโดยไม่ต้องซื้อเต็มราคา ลองก่อนเล่นได้เยอะกว่า!</p>
+            <a href="#available-games" class="inline-block bg-blue-600 hover:bg-blue-700 text-white text-lg md:text-xl font-bold py-3 px-8 md:py-4 md:px-10 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                เริ่มเช่าเลย!
+            </a>
+        </div>
+    </section>
+
+    <!-- Available Games Section -->
+    <section id="available-games" class="container mx-auto px-4 py-12 md:py-16">
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-8 md:mb-12">รหัสเกมที่มีให้เช่า</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <!-- Game Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x400/b0e0e6/3498db?text=Cyberpunk+2077" alt="ภาพหน้าปกเกม Cyberpunk 2077" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Cyberpunk 2077</h4>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">ดำดิ่งสู่ Night City ในโลกอนาคตอันมืดมิดที่คุณกำหนดชะตาชีวิตของคุณเอง.</p>
+                    <div class="flex justify-between items-center mb-3 md:mb-4">
+                        <span class="text-purple-700 font-bold text-lg md:text-xl">฿150 / 3 วัน</span>
+                        <span class="text-green-600 font-semibold text-sm md:text-base">มีในสต็อก</span>
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors duration-300 text-base md:text-lg">เช่าเลย</button>
+                </div>
+            </div>
+
+            <!-- Game Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x400/c9c3e6/8e44ad?text=Elden+Ring" alt="ภาพหน้าปกเกม Elden Ring" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Elden Ring</h4>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">สำรวจดินแดน Lands Between ในเกม RPG แอคชั่นแฟนตาซีที่กว้างใหญ่.</p>
+                    <div class="flex justify-between items-center mb-3 md:mb-4">
+                        <span class="text-purple-700 font-bold text-lg md:text-xl">฿180 / 3 วัน</span>
+                        <span class="text-green-600 font-semibold text-sm md:text-base">มีในสต็อก</span>
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors duration-300 text-base md:text-lg">เช่าเลย</button>
+                </div>
+            </div>
+
+            <!-- Game Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x400/e6d5b0/d35400?text=The+Witcher+3" alt="ภาพหน้าปกเกม The Witcher 3" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">The Witcher 3: Wild Hunt</h4>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">รับบทเป็น Geralt of Rivia นักล่าอสูรในโลกแฟนตาซีอันกว้างใหญ่.</p>
+                    <div class="flex justify-between items-center mb-3 md:mb-4">
+                        <span class="text-purple-700 font-bold text-lg md:text-xl">฿120 / 3 วัน</span>
+                        <span class="text-green-600 font-semibold text-sm md:text-base">มีในสต็อก</span>
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors duration-300 text-base md:text-lg">เช่าเลย</button>
+                </div>
+            </div>
+
+            <!-- Game Card 4 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x400/b0e6cb/27ae60?text=Valheim" alt="ภาพหน้าปกเกม Valheim" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Valheim</h4>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">สำรวจโลกสแกนดิเนเวียในเกมเอาชีวิตรอดที่ได้รับแรงบันดาลใจจากไวกิ้ง.</p>
+                    <div class="flex justify-between items-center mb-3 md:mb-4">
+                        <span class="text-purple-700 font-bold text-lg md:text-xl">฿100 / 3 วัน</span>
+                        <span class="text-green-600 font-semibold text-sm md:text-base">มีในสต็อก</span>
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors duration-300 text-base md:text-lg">เช่าเลย</button>
+                </div>
+            </div>
+
+            <!-- Game Card 5 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x400/e6c9b0/e67e22?text=Among+Us" alt="ภาพหน้าปกเกม Among Us" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Among Us</h4>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">ค้นหา Impostor ก่อนที่พวกเขาจะทำลายลูกเรือทั้งหมด!</p>
+                    <div class="flex justify-between items-center mb-3 md:mb-4">
+                        <span class="text-purple-700 font-bold text-lg md:text-xl">฿50 / 3 วัน</span>
+                        <span class="text-yellow-600 font-semibold text-sm md:text-base">เหลือน้อย</span>
+                    </div>
+                    <button class="w-full bg-gray-400 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-lg cursor-not-allowed text-base md:text-lg" disabled>หมดชั่วคราว</button>
+                </div>
+            </div>
+
+            <!-- Game Card 6 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x400/b0cbe6/3498db?text=Grand+Theft+Auto+V" alt="ภาพหน้าปกเกม Grand Theft Auto V" class="w-full h-40 md:h-48 object-cover">
+                <div class="p-4 md:p-6">
+                    <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Grand Theft Auto V</h4>
+                    <p class="text-gray-600 text-sm md:text-base mb-3 md:mb-4">สัมผัสประสบการณ์โลกเปิดอันกว้างใหญ่ของ Los Santos.</p>
+                    <div class="flex justify-between items-center mb-3 md:mb-4">
+                        <span class="text-purple-700 font-bold text-lg md:text-xl">฿130 / 3 วัน</span>
+                        <span class="text-green-600 font-semibold text-sm md:text-base">มีในสต็อก</span>
+                    </div>
+                    <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors duration-300 text-base md:text-lg">เช่าเลย</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="bg-white py-12 md:py-16 px-4 shadow-md rounded-xl mb-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12">วิธีการทำงาน</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                <!-- Step 1 -->
+                <div class="bg-gray-50 p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl md:text-5xl text-blue-600 mb-4 md:mb-6">🎮</div>
+                    <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">1. เลือกเกมของคุณ</h4>
+                    <p class="text-gray-700 text-sm md:text-base">เลือกเกมที่คุณต้องการจากรายการที่มีอยู่ของเรา เรามีเกมหลากหลายประเภทให้คุณเลือกสรร.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-gray-50 p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl md:text-5xl text-blue-600 mb-4 md:mb-6">💳</div>
+                    <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">2. ทำการชำระเงิน</h4>
+                    <p class="text-gray-700 text-sm md:text-base">ชำระเงินผ่านช่องทางที่ปลอดภัยของเรา ระบบจะส่งรหัสเกมให้คุณทันที.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-gray-50 p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-4xl md:text-5xl text-blue-600 mb-4 md:mb-6">🚀</div>
+                    <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">3. สนุกกับการเล่น!</h4>
+                    <p class="text-gray-700 text-sm md:text-base">เปิดใช้งานรหัสเกมและเริ่มเล่นได้ทันที! สนุกกับเกมที่คุณชื่นชอบในช่วงเวลาที่คุณเช่า.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Rental Form Section -->
+    <section id="rental-form" class="bg-gradient-to-r from-blue-600 to-purple-700 py-16 md:py-20 px-4 text-white">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8">พร้อมที่จะเช่าแล้วหรือยัง?</h3>
+            <p class="text-lg md:text-xl mb-8 md:mb-10 max-w-xl mx-auto">กรอกแบบฟอร์มด้านล่างเพื่อทำการเช่ารหัสเกมที่คุณต้องการ!</p>
+            <div class="max-w-md mx-auto bg-white p-6 md:p-8 rounded-xl shadow-2xl text-gray-800">
+                <form>
+                    <div class="mb-4 md:mb-6 text-left">
+                        <label for="game-select" class="block text-gray-700 text-base md:text-lg font-medium mb-2">เลือกเกม:</label>
+                        <select id="game-select" name="game" class="w-full p-2 md:p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-base md:text-lg">
+                            <option value="">-- เลือกเกม --</option>
+                            <option value="cyberpunk">Cyberpunk 2077</option>
+                            <option value="elden-ring">Elden Ring</option>
+                            <option value="witcher-3">The Witcher 3: Wild Hunt</option>
+                            <option value="valheim">Valheim</option>
+                            <option value="among-us" disabled>Among Us (หมดชั่วคราว)</option>
+                            <option value="gta-v">Grand Theft Auto V</option>
+                        </select>
+                    </div>
+                    <div class="mb-4 md:mb-6 text-left">
+                        <label for="rental-duration" class="block text-gray-700 text-base md:text-lg font-medium mb-2">ระยะเวลาเช่า:</label>
+                        <select id="rental-duration" name="duration" class="w-full p-2 md:p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-base md:text-lg">
+                            <option value="3-days">3 วัน</option>
+                            <option value="7-days">7 วัน</option>
+                            <option value="14-days">14 วัน</option>
+                        </select>
+                    </div>
+                    <div class="mb-4 md:mb-6 text-left">
+                        <label for="email" class="block text-gray-700 text-base md:text-lg font-medium mb-2">อีเมลของคุณ:</label>
+                        <input type="email" id="email" name="email" placeholder="youremail@example.com" class="w-full p-2 md:p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-base md:text-lg" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg md:text-xl font-bold py-3 md:py-4 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+                        ยืนยันการเช่า
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-4 py-12 md:py-16">
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-8 md:mb-12">ติดต่อเรา</h3>
+        <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 md:gap-8">
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg w-full md:w-1/2 lg:w-1/3 text-center">
+                <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">ข้อมูลการติดต่อ</h4>
+                <p class="text-gray-700 text-sm md:text-base mb-1 md:mb-2">อีเมล: <a href="mailto:support@gamecoderentals.com" class="text-blue-600 hover:underline">support@gamecoderentals.com</a></p>
+                <p class="text-gray-700 text-sm md:text-base mb-1 md:mb-2">โทรศัพท์: +66 123 456 7890</p>
+                <p class="text-gray-700 text-sm md:text-base">ที่อยู่: 123 ถนนเกมมิ่ง, เขตเล่นเกม, กทม. 10110</p>
+            </div>
+            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg w-full md:w-1/2 lg:w-1/3 text-center">
+                <h4 class="text-xl md:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">ส่งข้อความถึงเรา</h4>
+                <form>
+                    <div class="mb-3 md:mb-4">
+                        <input type="text" placeholder="ชื่อของคุณ" class="w-full p-2 md:p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-base md:text-lg" required>
+                    </div>
+                    <div class="mb-3 md:mb-4">
+                        <input type="email" placeholder="อีเมลของคุณ" class="w-full p-2 md:p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-base md:text-lg" required>
+                    </div>
+                    <div class="mb-3 md:mb-4">
+                        <textarea placeholder="ข้อความของคุณ" rows="4" class="w-full p-2 md:p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-base md:text-lg" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 md:py-3 px-4 md:px-6 rounded-lg transition-colors duration-300 text-base md:text-lg">ส่งข้อความ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6 md:py-8 px-4 rounded-t-xl mt-12">
+        <div class="container mx-auto text-center">
+            <p class="mb-3 md:mb-4 text-sm md:text-base">&copy; 2025 GameCodeRentals. สงวนลิขสิทธิ์.</p>
+            <ul class="flex flex-col md:flex-row justify-center space-y-1 md:space-y-0 md:space-x-6 text-xs md:text-sm">
+                <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">นโยบายความเป็นส่วนตัว</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">ข้อกำหนดการใช้งาน</a></li>
+                <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">คำถามที่พบบ่อย</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
